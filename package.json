@@ -35,6 +35,7 @@
 	},
 	"homepage": "https://github.com/anubhavsrivastava/blame-my-network#readme",
 	"dependencies": {
+		"got": "^9.3.2",
 		"is-up": "^3.0.0"
 	}
 }
