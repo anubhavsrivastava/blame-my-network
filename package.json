@@ -4,7 +4,10 @@
 	"description": "Check whether a website is up or down only for your network",
 	"main": "index.js",
 	"scripts": {
-		"test": "test"
+		"test": "echo 'No Test found' "
+	},
+	"engines": {
+		"node": ">=8"
 	},
 	"repository": {
 		"type": "git",
@@ -18,7 +21,9 @@
 		"analyse",
 		"network-analyzer",
 		"network-monitoring",
-		"ping"
+		"ping",
+		"online",
+		"offline"
 	],
 	"author": {
 		"name": "Anubhav Srivastava",
@@ -28,5 +33,8 @@
 	"bugs": {
 		"url": "https://github.com/anubhavsrivastava/blame-my-network/issues"
 	},
-	"homepage": "https://github.com/anubhavsrivastava/blame-my-network#readme"
+	"homepage": "https://github.com/anubhavsrivastava/blame-my-network#readme",
+	"dependencies": {
+		"is-up": "^3.0.0"
+	}
 }
