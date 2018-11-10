@@ -1,0 +1,29 @@
+{
+  "name": "blame-my-network",
+  "version": "0.1.0",
+  "description": "Check whether a website is up or down only for your network",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anubhavsrivastava/blame-my-network.git"
+  },
+  "keywords": [
+    "network",
+    "cli",
+    "isp",
+    "network-analysis",
+    "analyse",
+    "network-analyzer",
+    "network-monitoring",
+    "ping"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anubhavsrivastava/blame-my-network/issues"
+  },
+  "homepage": "https://github.com/anubhavsrivastava/blame-my-network#readme"
+}
