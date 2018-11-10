@@ -1,12 +1,23 @@
 const isUp = require('is-up');
 const got = require('got');
-
-const requestStack = {};
-const _generateResponse = (status, reason) => {
-	return Object.assign({}, { meta: requestStack }, { status, reason });
+const defaultOptions = {
+	showMeta: false
 };
-let site = 'http://theanubhav.com';
-const blameMyNetwork = async () => {
+
+const blameMyNetwork = async (site, opts = {}) => {
+	if (!site) {
+		return new Error('Please specify site URL');
+	}
+	opts = Object.assign({}, defaultOptions, opts);
+	const requestStack = {};
+	const _generateResponse = (status, reason) => {
+		if (opts.showMeta) {
+			return Object.assign({}, { meta: requestStack }, { status, reason });
+		} else {
+			return Object.assign({}, { status, reason });
+		}
+	};
+
 	try {
 		requestStack.externalConnection = false;
 		let foreignNetworkResult = await isUp(site);
@@ -53,5 +64,8 @@ const blameMyNetwork = async () => {
 };
 
 (async () => {
-	console.log(await blameMyNetwork());
+	let result = await blameMyNetwork('http://theanubhav.com', { showMeta: true });
+	console.log(result);
 })();
+
+module.exports = blameMyNetwork;
