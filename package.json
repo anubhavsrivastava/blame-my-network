@@ -12,6 +12,9 @@
 	"engines": {
 		"node": ">=8"
 	},
+	"bin": {
+		"blamemynetwork": "index.js"
+	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/anubhavsrivastava/blame-my-network.git"
@@ -40,6 +43,7 @@
 	"dependencies": {
 		"got": "^9.3.2",
 		"is-up": "^3.0.0",
+		"is-up-cli": "^2.0.0",
 		"meow": "^5.0.0"
 	},
 	"devDependencies": {
