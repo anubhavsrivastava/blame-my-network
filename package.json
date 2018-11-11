@@ -1,6 +1,6 @@
 {
 	"name": "blame-my-network",
-	"version": "0.1.1",
+	"version": "0.1.0",
 	"description": "Check whether a website is up or down only for your network",
 	"main": "index.js",
 	"scripts": {
@@ -44,7 +44,8 @@
 		"got": "^9.3.2",
 		"is-up": "^3.0.0",
 		"is-up-cli": "^2.0.0",
-		"meow": "^5.0.0"
+		"meow": "^5.0.0",
+		"update-notifier": "^2.5.0"
 	},
 	"devDependencies": {
 		"babel-cli": "^6.26.0",
