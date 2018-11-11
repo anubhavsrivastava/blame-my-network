@@ -36,6 +36,19 @@
 	"homepage": "https://github.com/anubhavsrivastava/blame-my-network#readme",
 	"dependencies": {
 		"got": "^9.3.2",
-		"is-up": "^3.0.0"
+		"is-up": "^3.0.0",
+		"meow": "^5.0.0"
+	},
+	"devDependencies": {
+		"babel-cli": "^6.26.0",
+		"babel-core": "^6.26.3",
+		"babel-plugin-transform-runtime": "^6.23.0",
+		"babel-preset-env": "^1.6.1",
+		"babel-preset-stage-0": "^6.24.1",
+		"babel-preset-stage-1": "^6.24.1",
+		"babel-preset-stage-2": "^6.24.1",
+		"babel-preset-stage-3": "^6.24.1",
+		"coveralls": "^3.0.2",
+		"jest": "^23.6.0"
 	}
 }
