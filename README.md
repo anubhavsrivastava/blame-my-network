@@ -9,7 +9,7 @@ Check whether a website is up or down only for your network
 
 [![NPM](https://nodei.co/npm/blame-my-network.png?downloads=true&stars=true)](https://nodei.co/npm/blame-my-network/)
 
-## Usage
+## Installation
 
 One time usage,
 
@@ -18,11 +18,32 @@ One time usage,
     output:
     Connection successful from both, internal and external network.
 
-Installing global package
+Installing as global package
 
     $ npm i -g blame-my-network
     $ blamemynetwork http://theanubhav.com
-    Connection successful from both, internal and external network.
 
     output:
     Connection successful from both, internal and external network.
+
+## Usage
+
+1.  Connection available for both outside world and on your network
+
+        $ blamemynetwork http://theanubhav.com
+        Connection successful from both, internal and external network.
+
+2.  Connection available for only your network and not to external network. In case site is either not public, or you are on VPN, or accessing organisation internal site, or manually entry for DNS on host machine/router.
+
+        $ blamemynetwork https://someinternalsite.com
+        Only internal network could access the site.
+
+3.  Your network couldn't access the site while external network could access the site and you should `blame your network` for this.
+
+        $ blamemynetwork https://blamethenetworksite.com
+        Blame you network. The external network can acess the site.
+
+4.  Neither your network nor external network could access the site. Either site doesn't exists or is down for now
+
+        $ blamemynetwork https://blamethenetworksite.com
+        Connection failure from both, internal and external network.
