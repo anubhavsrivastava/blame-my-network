@@ -7,6 +7,8 @@ Check whether a website is up or down only for your network
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![GitHub issues](https://img.shields.io/github/issues/anubhavsrivastava/blame-my-network.svg?style=flat-square)](https://github.com/anubhavsrivastava/blame-my-network/issues)
 
+[![NPM](https://nodei.co/npm/blame-my-network.png?downloads=true&stars=true)](https://nodei.co/npm/blame-my-network/)
+
 ## Usage
 
 One time usage,
