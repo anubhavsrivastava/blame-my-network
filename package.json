@@ -1,6 +1,6 @@
 {
 	"name": "blame-my-network",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Check whether a website is up or down only for your network",
 	"main": "index.js",
 	"scripts": {
