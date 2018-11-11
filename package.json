@@ -4,7 +4,10 @@
 	"description": "Check whether a website is up or down only for your network",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo 'No Test found' "
+		"test": "jest",
+		"test:watch": "jest --watch",
+		"test:coverage": "jest --coverage",
+		"coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls"
 	},
 	"engines": {
 		"node": ">=8"
