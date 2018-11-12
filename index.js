@@ -16,7 +16,6 @@ Options
   --output-json, -j Log details in JSON format
 Examples
   $ blamemynet http://theanubhav.com
-  🌈 unicorns 🌈
 `;
 const cli = meow(helpText, {
 	flags: {
