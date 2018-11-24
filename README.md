@@ -47,3 +47,9 @@ Installing as global package
 
         $ blamemynetwork https://blamethenetworksite.com
         Connection failure from both, internal and external network.
+
+
+## Known Issues
+
+1. For URL with explicit port : eg, 9080, 8080 will be reported as not available from external network
+2. Domains not respondind to http(or port 80, returning 302 or HSTS header) would be reported as not available from external network
