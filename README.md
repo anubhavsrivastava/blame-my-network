@@ -53,3 +53,9 @@ Installing as global package
 
 1. For URL with explicit port : eg, abc.com:9080, xyz.pqr.com:8080 will be reported as not available from external network
 2. Domains not responding to http(or port 80, returning 302 or HSTS header) would be reported as not available from external network
+
+## License
+
+[![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](LICENSE)
+
+refer `LICENSE` file in this repository.
