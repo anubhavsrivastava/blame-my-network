@@ -41,7 +41,7 @@ Installing as global package
 3.  Your network couldn't access the site while external network could access the site and you should `blame your network` for this.
 
         $ blamemynetwork https://blamethenetworksite.com
-        Blame you network. The external network can acess the site.
+        Blame your network. The external network can acess the site.
 
 4.  Neither your network nor external network could access the site. Either site doesn't exists or is down for now
 
