@@ -2,20 +2,16 @@
 'use strict';
 const meow = require('meow');
 const blameMyNetwork = require('./lib/index');
-const updateNotifier = require('update-notifier');
-const pkg = require('./package.json');
-
-updateNotifier({ pkg }).notify();
 
 const helpText = `
 Usage
-  $ blamemynet <website>
+  $ blamemynetwork <website>
 
 Options
   --informative, -i  Include additional information for network
   --output-json, -j Log details in JSON format
 Examples
-  $ blamemynet http://theanubhav.com
+  $ blamemynetwork http://theanubhav.com
 `;
 const cli = meow(helpText, {
 	flags: {
